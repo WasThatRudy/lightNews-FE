@@ -26,6 +26,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageButton btnFilter;
 
   @NonNull
+  public final ImageButton btnReadArticle;
+
+  @NonNull
   public final RecyclerView rvCards;
 
   @NonNull
@@ -38,10 +41,11 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView tvSwipeFeedback;
 
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull ImageButton btnFilter,
-      @NonNull RecyclerView rvCards, @NonNull Switch switchTTS, @NonNull TextView tvEmpty,
-      @NonNull TextView tvSwipeFeedback) {
+      @NonNull ImageButton btnReadArticle, @NonNull RecyclerView rvCards, @NonNull Switch switchTTS,
+      @NonNull TextView tvEmpty, @NonNull TextView tvSwipeFeedback) {
     this.rootView = rootView;
     this.btnFilter = btnFilter;
+    this.btnReadArticle = btnReadArticle;
     this.rvCards = rvCards;
     this.switchTTS = switchTTS;
     this.tvEmpty = tvEmpty;
@@ -81,6 +85,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnReadArticle;
+      ImageButton btnReadArticle = ViewBindings.findChildViewById(rootView, id);
+      if (btnReadArticle == null) {
+        break missingId;
+      }
+
       id = R.id.rvCards;
       RecyclerView rvCards = ViewBindings.findChildViewById(rootView, id);
       if (rvCards == null) {
@@ -105,8 +115,8 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, btnFilter, rvCards, switchTTS, tvEmpty,
-          tvSwipeFeedback);
+      return new FragmentHomeBinding((FrameLayout) rootView, btnFilter, btnReadArticle, rvCards,
+          switchTTS, tvEmpty, tvSwipeFeedback);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

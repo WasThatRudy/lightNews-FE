@@ -16,6 +16,7 @@ drawable ic_search
 drawable ic_trending
 id btnAction
 id btnFilter
+id btnReadArticle
 id btnSavePrefs
 id cbBusiness
 id cbSports

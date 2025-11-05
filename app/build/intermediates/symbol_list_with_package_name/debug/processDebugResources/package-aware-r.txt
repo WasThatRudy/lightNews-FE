@@ -3221,6 +3221,7 @@ id bounceEnd
 id bounceStart
 id btnAction
 id btnFilter
+id btnReadArticle
 id btnSavePrefs
 id buttonPanel
 id cache_measures

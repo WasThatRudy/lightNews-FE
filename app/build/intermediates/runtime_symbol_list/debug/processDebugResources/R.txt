@@ -3220,6 +3220,7 @@ int id bounceEnd 0x7f080064
 int id bounceStart 0x7f080065
 int id btnAction 0x7f080066
 int id btnFilter 0x7f080067
+int id btnReadArticle 0x7f080216
 int id btnSavePrefs 0x7f080068
 int id buttonPanel 0x7f080069
 int id cache_measures 0x7f08006a

@@ -22,6 +22,7 @@ import android.preference.PreferenceManager;
 import android.widget.Switch;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.app.AlertDialog;
 import java.util.Locale;
 
@@ -35,6 +36,7 @@ public class HomeFragment extends Fragment {
     private SharedPreferences prefs;
     private Switch switchTTS;
     private String selectedCategory = null; // null means all
+    private Article currentlyReadingArticle = null; // Track which article is being read
 
     @Nullable
     @Override
@@ -46,6 +48,7 @@ public class HomeFragment extends Fragment {
         TextView tvSwipeFeedback = view.findViewById(R.id.tvSwipeFeedback);
         switchTTS = view.findViewById(R.id.switchTTS);
         ImageButton btnFilter = view.findViewById(R.id.btnFilter);
+        ImageButton btnReadArticle = view.findViewById(R.id.btnReadArticle);
         
         prefs = PreferenceManager.getDefaultSharedPreferences(requireContext());
         boolean ttsEnabled = prefs.getBoolean("tts_enabled", true);
@@ -82,6 +85,9 @@ public class HomeFragment extends Fragment {
                 adapter.notifyItemRemoved(position);
 
                 if (ttsReady && prefs.getBoolean("tts_enabled", true)) {
+                    // Stop any ongoing TTS
+                    tts.stop();
+                    // Read feedback only
                     tts.speak(feedback.equals("like") ? "Liked" : "Disliked", TextToSpeech.QUEUE_FLUSH, null, "swipe_feedback");
                 }
 
@@ -106,11 +112,44 @@ public class HomeFragment extends Fragment {
                     tvEmpty.setVisibility(View.VISIBLE);
                 } else {
                     tvEmpty.setVisibility(View.GONE);
+                    // Auto-read the next card if TTS is enabled (after a short delay)
+                    if (ttsReady && prefs.getBoolean("tts_enabled", true) && !articles.isEmpty()) {
+                        Article nextArticle = articles.get(0);
+                        // Only read if it's a different article
+                        if (currentlyReadingArticle != nextArticle) {
+                            currentlyReadingArticle = nextArticle;
+                            String nextText = nextArticle.getTitle() + ". " + nextArticle.getSummary();
+                            // Stop previous TTS and read new card after short delay
+                            tts.stop();
+                            tvSwipeFeedback.postDelayed(() -> {
+                                if (ttsReady && prefs.getBoolean("tts_enabled", true) && !articles.isEmpty() && articles.get(0) == nextArticle && currentlyReadingArticle == nextArticle) {
+                                    tts.speak(nextText, TextToSpeech.QUEUE_FLUSH, null, "next_article");
+                                }
+                            }, 500);
+                        }
+                    }
                 }
             }
         };
 
         new ItemTouchHelper(callback).attachToRecyclerView(recyclerView);
+
+        // Read Article button
+        btnReadArticle.setOnClickListener(v -> {
+            if (articles.isEmpty() || !ttsReady || !prefs.getBoolean("tts_enabled", true)) {
+                Toast.makeText(requireContext(), "No article to read", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            Article currentArticle = articles.get(0);
+            // Only read if it's a different article or if TTS is not currently speaking
+            if (currentlyReadingArticle != currentArticle || !tts.isSpeaking()) {
+                currentlyReadingArticle = currentArticle;
+                // Stop any ongoing TTS
+                tts.stop();
+                String text = currentArticle.getTitle() + ". " + currentArticle.getSummary();
+                tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "read_article");
+            }
+        });
 
         btnFilter.setOnClickListener(v -> {
             String[] categories = new String[]{"All","business","entertainment","general","health","science","sports","technology"};
