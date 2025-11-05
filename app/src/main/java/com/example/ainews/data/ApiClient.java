@@ -16,11 +16,21 @@ public class ApiClient {
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
             logging.setLevel(HttpLoggingInterceptor.Level.BASIC);
             OkHttpClient client = new OkHttpClient.Builder()
+                    .addInterceptor(chain -> {
+                        okhttp3.Request original = chain.request();
+                        // Read token from shared preferences via context-less holder
+                        String token = TokenStore.getToken();
+                        okhttp3.Request.Builder builder = original.newBuilder();
+                        if (token != null && !token.isEmpty()) {
+                            builder.header("Authorization", "Bearer " + token);
+                        }
+                        return chain.proceed(builder.build());
+                    })
                     .addInterceptor(logging)
                     .build();
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://your-backend.example.com/")
+                    .baseUrl("http://10.0.2.2:3000/")
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();

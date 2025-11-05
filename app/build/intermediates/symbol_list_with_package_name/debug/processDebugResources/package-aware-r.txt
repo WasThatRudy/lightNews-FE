@@ -3027,6 +3027,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_filter
 drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_foreground
@@ -3214,11 +3215,12 @@ id below
 id bestChoice
 id blocking
 id bottom
-id bottom_nav
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAction
+id btnFilter
 id btnSavePrefs
 id buttonPanel
 id cache_measures
@@ -3305,7 +3307,9 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etPassword
 id etQuery
+id etUsername
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3475,6 +3479,7 @@ id outline
 id outward
 id overshoot
 id packed
+id pager
 id parallax
 id parent
 id parentPanel
@@ -3568,6 +3573,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id switchTTS
+id tabLayout
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3619,6 +3625,7 @@ id transition_transform
 id triangle
 id tvEmpty
 id tvSummary
+id tvSwipeFeedback
 id tvTitle
 id unchecked
 id uniform
@@ -3758,6 +3765,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_auth
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3775,6 +3783,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_auth_simple
 layout fragment_home
 layout fragment_profile
 layout fragment_search

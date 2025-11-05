@@ -7,14 +7,16 @@ public class Article {
     private final String timeAgo;
     private final String imageUrl;
     private final String url;
+    private final String category;
 
-    public Article(String title, String summary, String source, String timeAgo, String imageUrl, String url) {
+    public Article(String title, String summary, String source, String timeAgo, String imageUrl, String url, String category) {
         this.title = title;
         this.summary = summary;
         this.source = source;
         this.timeAgo = timeAgo;
         this.imageUrl = imageUrl;
         this.url = url;
+        this.category = category;
     }
 
     public String getTitle() { return title; }
@@ -23,6 +25,7 @@ public class Article {
     public String getTimeAgo() { return timeAgo; }
     public String getImageUrl() { return imageUrl; }
     public String getUrl() { return url; }
+    public String getCategory() { return category; }
 }
 
 

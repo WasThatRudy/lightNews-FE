@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <color name="md_list_divider">#EEEEEE</color>
+    <color name="md_list_divider">#EAEAEA</color>
     <color name="md_theme_background">#FFFFFF</color>
-    <color name="md_theme_onBackground">#1B1B1B</color>
+    <color name="md_theme_onBackground">#111111</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
-    <color name="md_theme_primary">#3F51B5</color>
-    <color name="md_theme_primaryVariant">#303F9F</color>
-    <color name="md_theme_secondary">#FF4081</color>
+    <color name="md_theme_primary">#111111</color>
+    <color name="md_theme_primaryVariant">#222222</color>
+    <color name="md_theme_secondary">#0A84FF</color>
     <color name="md_theme_surface">#FFFFFF</color>
-    <string name="app_name">AI News</string>
+    <string name="app_name">Light News</string>
     <string name="feature_personalization">User Personalization</string>
     <string name="feature_realtime">Real-Time Updates</string>
     <string name="feature_trending">Trending Highlights</string>

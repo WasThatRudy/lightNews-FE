@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_trending.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-mergeDebugResources-33:\\layout\\fragment_auth_simple.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_auth_simple.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-mergeDebugResources-33:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\activity_main.xml"
     },
@@ -20,11 +24,15 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_profile.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-mergeDebugResources-33:\\layout\\activity_auth.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\activity_auth.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-mergeDebugResources-33:\\layout\\item_article.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\item_article.xml"
     },
     {
-        "merged": "com.example.ainews.app-mergeDebugResources-33:/layout/fragment_home.xml",
-        "source": "com.example.ainews.app-main-36:/layout/fragment_home.xml"
+        "merged": "com.example.ainews.app-mergeDebugResources-33:/layout/activity_auth.xml",
+        "source": "com.example.ainews.app-main-36:/layout/activity_auth.xml"
     }
 ]

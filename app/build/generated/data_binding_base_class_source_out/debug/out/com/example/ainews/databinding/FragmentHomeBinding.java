@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,6 +23,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final ImageButton btnFilter;
+
+  @NonNull
   public final RecyclerView rvCards;
 
   @NonNull
@@ -30,12 +34,18 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final TextView tvEmpty;
 
-  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView rvCards,
-      @NonNull Switch switchTTS, @NonNull TextView tvEmpty) {
+  @NonNull
+  public final TextView tvSwipeFeedback;
+
+  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull ImageButton btnFilter,
+      @NonNull RecyclerView rvCards, @NonNull Switch switchTTS, @NonNull TextView tvEmpty,
+      @NonNull TextView tvSwipeFeedback) {
     this.rootView = rootView;
+    this.btnFilter = btnFilter;
     this.rvCards = rvCards;
     this.switchTTS = switchTTS;
     this.tvEmpty = tvEmpty;
+    this.tvSwipeFeedback = tvSwipeFeedback;
   }
 
   @Override
@@ -65,6 +75,12 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnFilter;
+      ImageButton btnFilter = ViewBindings.findChildViewById(rootView, id);
+      if (btnFilter == null) {
+        break missingId;
+      }
+
       id = R.id.rvCards;
       RecyclerView rvCards = ViewBindings.findChildViewById(rootView, id);
       if (rvCards == null) {
@@ -83,7 +99,14 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, rvCards, switchTTS, tvEmpty);
+      id = R.id.tvSwipeFeedback;
+      TextView tvSwipeFeedback = ViewBindings.findChildViewById(rootView, id);
+      if (tvSwipeFeedback == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((FrameLayout) rootView, btnFilter, rvCards, switchTTS, tvEmpty,
+          tvSwipeFeedback);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:2:1-28:12
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\ea43dde0d3cdab9c45092d615be80ee6\transformed\jetified-viewbinding-8.13.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\e9393cb5b278228fb296c96dd3138da9\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\c86671353629c686256647738383f292\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
@@ -38,8 +38,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] C:\Users\Asus\.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.6] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\01882420f225648343d4d4d5ec02e2e5\transformed\lifecycle-livedata-2.8.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\4de05ac4619fb47df349b589aef8bc26\transformed\jetified-lifecycle-viewmodel-savedstate-2.8.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\2bedac994519f86b2a2e4f14a0fc646b\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\aee5a1d4295b1fb8acdae1eec8c8e7f6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\f072bc5f717c268c3b65504d8d90f8e4\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\aee5a1d4295b1fb8acdae1eec8c8e7f6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\7aabb2de489a33bccc1dbca97fa9f97b\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\357e6d7a6df9d1b76adcbb43423ebbb1\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\c3008708e5e45232aff7af9d611a0314\transformed\jetified-gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
@@ -65,8 +65,8 @@ ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
 		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:6:5-24:19
-INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:6:5-24:19
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:6:5-26:19
+INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:6:5-26:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\e9393cb5b278228fb296c96dd3138da9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\e9393cb5b278228fb296c96dd3138da9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\c86671353629c686256647738383f292\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -99,28 +99,34 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\As
 		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:12:9-44
-activity#com.example.ainews.MainActivity
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:14:9-21:20
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:13:9-44
+activity#com.example.ainews.auth.AuthActivity
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:15:9-22:20
 	android:exported
-		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:15:13-41
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:16:13-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:17:13-20:29
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.example.ainews.MainActivity
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:23:9-50
+	android:name
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:23:19-47
 uses-library#org.apache.http.legacy
-ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:23:9-88
+ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:25:9-88
 	android:required
-		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:23:61-85
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:25:61-85
 	android:name
-		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:23:23-60
+		ADDED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml:25:23-60
 uses-sdk
 INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Asus\proj\madlabproj\app\src\main\AndroidManifest.xml
@@ -193,10 +199,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] C:\Users\A
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\4de05ac4619fb47df349b589aef8bc26\transformed\jetified-lifecycle-viewmodel-savedstate-2.8.6\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\2bedac994519f86b2a2e4f14a0fc646b\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\2bedac994519f86b2a2e4f14a0fc646b\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\aee5a1d4295b1fb8acdae1eec8c8e7f6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\aee5a1d4295b1fb8acdae1eec8c8e7f6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\f072bc5f717c268c3b65504d8d90f8e4\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\f072bc5f717c268c3b65504d8d90f8e4\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\aee5a1d4295b1fb8acdae1eec8c8e7f6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\aee5a1d4295b1fb8acdae1eec8c8e7f6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\7aabb2de489a33bccc1dbca97fa9f97b\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\7aabb2de489a33bccc1dbca97fa9f97b\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Asus\.gradle\caches\9.0-milestone-1\transforms\357e6d7a6df9d1b76adcbb43423ebbb1\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44

@@ -1,4 +1,4 @@
-# AI News (Android - Java + XML)
+# Light News (Android - Java + XML)
 
 Frontend-only Android app showcasing an AI-driven news experience with Home, Search, Trending, and Profile screens. Clean repository/API layer is ready for backend integration.
 
