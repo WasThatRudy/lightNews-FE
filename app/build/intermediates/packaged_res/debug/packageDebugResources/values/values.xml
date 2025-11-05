@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="md_list_divider">#EEEEEE</color>
+    <color name="md_theme_background">#FFFFFF</color>
+    <color name="md_theme_onBackground">#1B1B1B</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primary">#3F51B5</color>
+    <color name="md_theme_primaryVariant">#303F9F</color>
+    <color name="md_theme_secondary">#FF4081</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <string name="app_name">AI News</string>
+    <string name="feature_personalization">User Personalization</string>
+    <string name="feature_realtime">Real-Time Updates</string>
+    <string name="feature_trending">Trending Highlights</string>
+    <string name="headline_ai_reco">AI Recommendation Engine</string>
+    <string name="headline_intelligent_search">Intelligent Search</string>
+    <string name="headline_smart_filtering">Smart Filtering System</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_trending">Trending</string>
+    <string name="search_hint">Search articles, topics, or sources</string>
+    <style name="Theme.AINews" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="android:navigationBarColor" ns1:targetApi="l">@color/md_theme_primary</item>
+    </style>
+</resources>

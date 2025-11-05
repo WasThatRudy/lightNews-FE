@@ -1,0 +1,10 @@
+// Top-level build file using plugins DSL; repositories are managed in settings.gradle
+plugins {
+    id 'com.android.application' version '8.13.0' apply false
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
+
+

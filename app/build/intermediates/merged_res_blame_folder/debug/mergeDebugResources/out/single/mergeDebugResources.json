@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\drawable_ic_trending.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\drawable\\ic_trending.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\layout_fragment_trending.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_trending.xml"
+    },
+    {
+        "merged": "com.example.ainews.app-debug-34:/layout_fragment_home.xml.flat",
+        "source": "com.example.ainews.app-main-36:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\layout_item_article.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\item_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-debug-34:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\9.0-milestone-1\\com.example.ainews.app-main-36:\\drawable\\ic_search.xml"
+    }
+]

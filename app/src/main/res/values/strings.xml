@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI News</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_trending">Trending</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="headline_smart_filtering">Smart Filtering System</string>
+    <string name="headline_ai_reco">AI Recommendation Engine</string>
+    <string name="headline_intelligent_search">Intelligent Search</string>
+    <string name="feature_realtime">Real-Time Updates</string>
+    <string name="feature_personalization">User Personalization</string>
+    <string name="feature_trending">Trending Highlights</string>
+    <string name="search_hint">Search articles, topics, or sources</string>
+</resources>
+
+
