@@ -192,9 +192,8 @@ public class HomeFragment extends Fragment {
         boolean firstLaunchDone = prefs.getBoolean("first_launch_done", false);
         tts = new TextToSpeech(requireContext(), status -> {
             ttsReady = status == TextToSpeech.SUCCESS && tts.setLanguage(Locale.getDefault()) >= 0;
-            if (ttsReady && !firstLaunchDone && prefs.getBoolean("tts_enabled", true)) {
-                tts.speak("Swipe left if you don't like the news, swipe right if you do.", TextToSpeech.QUEUE_FLUSH, null, "onboarding");
-                prefs.edit().putBoolean("first_launch_done", true).apply();
+            if (ttsReady && prefs.getBoolean("tts_enabled", true)) {
+                tts.speak("Swipe right for interested and left for not interested", TextToSpeech.QUEUE_FLUSH, null, "onboarding");
             }
         });
 
