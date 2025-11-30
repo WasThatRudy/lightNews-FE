@@ -4,13 +4,15 @@ package com.example.ainews.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager2.widget.ViewPager2;
 import com.example.ainews.R;
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,7 +20,10 @@ import java.lang.String;
 
 public final class ActivityAuthBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final MaterialCardView cardAuth;
 
   @NonNull
   public final ViewPager2 pager;
@@ -26,16 +31,26 @@ public final class ActivityAuthBinding implements ViewBinding {
   @NonNull
   public final TabLayout tabLayout;
 
-  private ActivityAuthBinding(@NonNull LinearLayout rootView, @NonNull ViewPager2 pager,
-      @NonNull TabLayout tabLayout) {
+  @NonNull
+  public final TextView tvBrand;
+
+  @NonNull
+  public final TextView tvBrandSubtitle;
+
+  private ActivityAuthBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialCardView cardAuth, @NonNull ViewPager2 pager, @NonNull TabLayout tabLayout,
+      @NonNull TextView tvBrand, @NonNull TextView tvBrandSubtitle) {
     this.rootView = rootView;
+    this.cardAuth = cardAuth;
     this.pager = pager;
     this.tabLayout = tabLayout;
+    this.tvBrand = tvBrand;
+    this.tvBrandSubtitle = tvBrandSubtitle;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -60,6 +75,12 @@ public final class ActivityAuthBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cardAuth;
+      MaterialCardView cardAuth = ViewBindings.findChildViewById(rootView, id);
+      if (cardAuth == null) {
+        break missingId;
+      }
+
       id = R.id.pager;
       ViewPager2 pager = ViewBindings.findChildViewById(rootView, id);
       if (pager == null) {
@@ -72,7 +93,20 @@ public final class ActivityAuthBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAuthBinding((LinearLayout) rootView, pager, tabLayout);
+      id = R.id.tvBrand;
+      TextView tvBrand = ViewBindings.findChildViewById(rootView, id);
+      if (tvBrand == null) {
+        break missingId;
+      }
+
+      id = R.id.tvBrandSubtitle;
+      TextView tvBrandSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvBrandSubtitle == null) {
+        break missingId;
+      }
+
+      return new ActivityAuthBinding((ConstraintLayout) rootView, cardAuth, pager, tabLayout,
+          tvBrand, tvBrandSubtitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

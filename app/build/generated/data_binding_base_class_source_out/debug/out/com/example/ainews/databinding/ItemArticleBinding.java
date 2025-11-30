@@ -5,23 +5,33 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ainews.R;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ItemArticleBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final MaterialCardView rootView;
+
+  @NonNull
+  public final LinearLayout contentOverlay;
 
   @NonNull
   public final ImageView ivThumb;
+
+  @NonNull
+  public final TextView tvCategory;
+
+  @NonNull
+  public final TextView tvMeta;
 
   @NonNull
   public final TextView tvSummary;
@@ -29,17 +39,22 @@ public final class ItemArticleBinding implements ViewBinding {
   @NonNull
   public final TextView tvTitle;
 
-  private ItemArticleBinding(@NonNull CardView rootView, @NonNull ImageView ivThumb,
-      @NonNull TextView tvSummary, @NonNull TextView tvTitle) {
+  private ItemArticleBinding(@NonNull MaterialCardView rootView,
+      @NonNull LinearLayout contentOverlay, @NonNull ImageView ivThumb,
+      @NonNull TextView tvCategory, @NonNull TextView tvMeta, @NonNull TextView tvSummary,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
+    this.contentOverlay = contentOverlay;
     this.ivThumb = ivThumb;
+    this.tvCategory = tvCategory;
+    this.tvMeta = tvMeta;
     this.tvSummary = tvSummary;
     this.tvTitle = tvTitle;
   }
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public MaterialCardView getRoot() {
     return rootView;
   }
 
@@ -64,9 +79,27 @@ public final class ItemArticleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.contentOverlay;
+      LinearLayout contentOverlay = ViewBindings.findChildViewById(rootView, id);
+      if (contentOverlay == null) {
+        break missingId;
+      }
+
       id = R.id.ivThumb;
       ImageView ivThumb = ViewBindings.findChildViewById(rootView, id);
       if (ivThumb == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCategory;
+      TextView tvCategory = ViewBindings.findChildViewById(rootView, id);
+      if (tvCategory == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMeta;
+      TextView tvMeta = ViewBindings.findChildViewById(rootView, id);
+      if (tvMeta == null) {
         break missingId;
       }
 
@@ -82,7 +115,8 @@ public final class ItemArticleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemArticleBinding((CardView) rootView, ivThumb, tvSummary, tvTitle);
+      return new ItemArticleBinding((MaterialCardView) rootView, contentOverlay, ivThumb,
+          tvCategory, tvMeta, tvSummary, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

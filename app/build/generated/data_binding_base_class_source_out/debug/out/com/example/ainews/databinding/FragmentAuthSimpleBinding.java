@@ -4,42 +4,57 @@ package com.example.ainews.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ainews.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentAuthSimpleBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
-  public final Button btnAction;
+  public final MaterialButton btnAction;
 
   @NonNull
-  public final EditText etPassword;
+  public final TextInputEditText etPassword;
 
   @NonNull
-  public final EditText etUsername;
+  public final TextInputEditText etUsername;
 
-  private FragmentAuthSimpleBinding(@NonNull LinearLayout rootView, @NonNull Button btnAction,
-      @NonNull EditText etPassword, @NonNull EditText etUsername) {
+  @NonNull
+  public final TextView tvFormSubtitle;
+
+  @NonNull
+  public final TextView tvFormTitle;
+
+  @NonNull
+  public final TextView tvSwipeHint;
+
+  private FragmentAuthSimpleBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnAction,
+      @NonNull TextInputEditText etPassword, @NonNull TextInputEditText etUsername,
+      @NonNull TextView tvFormSubtitle, @NonNull TextView tvFormTitle,
+      @NonNull TextView tvSwipeHint) {
     this.rootView = rootView;
     this.btnAction = btnAction;
     this.etPassword = etPassword;
     this.etUsername = etUsername;
+    this.tvFormSubtitle = tvFormSubtitle;
+    this.tvFormTitle = tvFormTitle;
+    this.tvSwipeHint = tvSwipeHint;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -65,25 +80,43 @@ public final class FragmentAuthSimpleBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btnAction;
-      Button btnAction = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton btnAction = ViewBindings.findChildViewById(rootView, id);
       if (btnAction == null) {
         break missingId;
       }
 
       id = R.id.etPassword;
-      EditText etPassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
         break missingId;
       }
 
       id = R.id.etUsername;
-      EditText etUsername = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etUsername = ViewBindings.findChildViewById(rootView, id);
       if (etUsername == null) {
         break missingId;
       }
 
-      return new FragmentAuthSimpleBinding((LinearLayout) rootView, btnAction, etPassword,
-          etUsername);
+      id = R.id.tvFormSubtitle;
+      TextView tvFormSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvFormSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFormTitle;
+      TextView tvFormTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvFormTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSwipeHint;
+      TextView tvSwipeHint = ViewBindings.findChildViewById(rootView, id);
+      if (tvSwipeHint == null) {
+        break missingId;
+      }
+
+      return new FragmentAuthSimpleBinding((ScrollView) rootView, btnAction, etPassword, etUsername,
+          tvFormSubtitle, tvFormTitle, tvSwipeHint);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

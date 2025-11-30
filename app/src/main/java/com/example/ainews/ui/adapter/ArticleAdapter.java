@@ -2,6 +2,7 @@ package com.example.ainews.ui.adapter;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,13 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         Article article = articles.get(position);
         holder.title.setText(article.getTitle());
         holder.summary.setText(article.getSummary());
+
+        String source = TextUtils.isEmpty(article.getSource()) ? "LightNews" : article.getSource();
+        String time = TextUtils.isEmpty(article.getTimeAgo()) ? "just now" : article.getTimeAgo();
+        holder.meta.setText(source + " • " + time);
+
+        String category = TextUtils.isEmpty(article.getCategory()) ? "Trending" : article.getCategory();
+        holder.category.setText(category.toUpperCase());
         Glide.with(holder.thumb.getContext())
                 .load(article.getImageUrl())
                 .placeholder(R.mipmap.ic_launcher)
@@ -58,11 +66,15 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         ImageView thumb;
         TextView title;
         TextView summary;
+        TextView meta;
+        TextView category;
         ArticleViewHolder(@NonNull View itemView) {
             super(itemView);
             thumb = itemView.findViewById(R.id.ivThumb);
             title = itemView.findViewById(R.id.tvTitle);
             summary = itemView.findViewById(R.id.tvSummary);
+            meta = itemView.findViewById(R.id.tvMeta);
+            category = itemView.findViewById(R.id.tvCategory);
         }
     }
 }

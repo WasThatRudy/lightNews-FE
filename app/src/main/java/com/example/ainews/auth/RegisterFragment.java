@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,14 @@ public class RegisterFragment extends Fragment {
         EditText etUser = v.findViewById(R.id.etUsername);
         EditText etPass = v.findViewById(R.id.etPassword);
         Button btn = v.findViewById(R.id.btnAction);
+        TextView title = v.findViewById(R.id.tvFormTitle);
+        TextView subtitle = v.findViewById(R.id.tvFormSubtitle);
+        if (title != null) {
+            title.setText("Create your account");
+        }
+        if (subtitle != null) {
+            subtitle.setText("Grab your handle and start tailoring your briefing.");
+        }
         btn.setText("Register");
         btn.setOnClickListener(view -> {
             if (TextUtils.isEmpty(etUser.getText()) || TextUtils.isEmpty(etPass.getText())) {

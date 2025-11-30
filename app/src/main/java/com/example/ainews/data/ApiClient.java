@@ -30,7 +30,7 @@ public class ApiClient {
                     .build();
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://10.0.2.2:3000/")
+                    .baseUrl("https://lightnews-v80g.onrender.com")
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
